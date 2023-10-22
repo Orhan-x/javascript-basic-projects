@@ -25,7 +25,7 @@ window.addEventListener("DOMContentLoaded", setupItems);
 // add item
 function addItem(e) {
   e.preventDefault();
-  const value = grocery.value;
+  const value = grocery.value.trim();
   const id = new Date().getTime().toString();
 
   if (value !== "" && !editFlag) {
